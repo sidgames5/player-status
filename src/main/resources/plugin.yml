@@ -1,0 +1,4 @@
+name: Player Status
+version: '${project.version}'
+main: com.sidgames5.status.PlayerStatus
+api-version: 1.20
