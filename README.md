@@ -1,3 +1,3 @@
 # player-status
 
-A status plugin/mod similar to the one by henkelmax
+A simple plugin that lets players set a status.
