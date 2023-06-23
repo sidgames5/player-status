@@ -1,4 +1,9 @@
-name: Player Status
+name: 'PlayerStatus'
 version: '${project.version}'
 main: com.sidgames5.status.PlayerStatus
-api-version: 1.20
+api-version: '1.20'
+
+commands:
+  setstatus:
+    description: Sets your status
+    usage: /setstatus status

@@ -4,14 +4,23 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.sidgames5.status.SharedConstants.NAME;
+import static com.sidgames5.status.SharedConstants.VERSION;
+
 public final class PlayerStatus extends JavaPlugin {
-    private static final Logger logger = LoggerFactory.getLogger("PlayerStatus");
-    public static final String VERSION = "1.0.0";
+    private static final Logger logger = LoggerFactory.getLogger(NAME);
+
 
     @Override
     public void onEnable() {
         // Plugin startup logic
-        logger.info("Starting PlayerStatus " + VERSION);
+        logger.info("Starting " + NAME + " " + VERSION);
+
+        logger.info("Registering commands");
+        getCommand("setstatus").setExecutor(new CommandHandler());
+        logger.info("Commands registered");
+
+        logger.info("Started " + NAME);
     }
 
     @Override
